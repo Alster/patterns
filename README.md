@@ -7,3 +7,10 @@ To run sample, type command in to console:
 
 node [folder]/[pattern]
 ```
+as example:
+
+```
+#!cmd
+
+node behavioral/chain
+```
