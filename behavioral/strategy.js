@@ -1,5 +1,5 @@
 //http://www.dofactory.com/net/strategy-design-pattern
-class Obj {
+class Some {
     constructor(strategy) {
         this.strategy = strategy
     }
@@ -16,7 +16,7 @@ function Reckless() {
     console.log(`im reckless`)
 }
 
-let careful = new Obj(Careful)
-let reckless = new Obj(Reckless)
+let careful = new Some(Careful)
+let reckless = new Some(Reckless)
 careful.be()
 reckless.be()

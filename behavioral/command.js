@@ -33,14 +33,14 @@ class Dispatcher {
     }
 }
 
-let mad = new Receiver('Isabella')
-let vika = new Receiver('Ethan')
+let isabella = new Receiver('Isabella')
+let ethan = new Receiver('Ethan')
 
 let kill = new Command('kill')
 let rescue = new Command('rescue')
 
 let dis = new Dispatcher()
-dis.send(kill, mad)
-dis.send(rescue, vika)
+dis.send(kill, isabella)
+dis.send(rescue, ethan)
 
 dis.execute()

@@ -9,18 +9,18 @@ class Honey {
     }
 }
 
-function Calm(guy) {
+function Calm(honey) {
     console.info(`honey is calm`)
-    guy.mood = Angry
+    honey.mood = Angry
 }
 
-function Angry(guy) {
+function Angry(honey) {
     console.warn(`honey is angry`)
-    guy.mood = Calm
+    honey.mood = Calm
 }
 
-let guy = new Honey()
-guy.doSome()
-guy.doSome()
-guy.doSome()
-guy.doSome()
+let honey = new Honey()
+honey.doSome()
+honey.doSome()
+honey.doSome()
+honey.doSome()

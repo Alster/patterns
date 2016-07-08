@@ -1,7 +1,7 @@
 //http://www.dofactory.com/net/memento-design-pattern
 class Honey {
-    constructor(state) {
-        this.state = state
+    constructor() {
+        this.state = 'ambiguous'
     }
 
     createMemento() {
@@ -25,8 +25,9 @@ class Store {
     }
 }
 
-let o = new Honey('i love you')
-let store = new Store(o.createMemento())
-o.state = 'stupid bitch'
-o.restoreFromMemento(store.mem)
-console.log(o.state)
+let honey = new Honey()
+honey.state = 'sweet'
+let store = new Store(honey.createMemento())
+honey.state = 'stupid bitch'
+honey.restoreFromMemento(store.mem)
+console.log(honey.state)

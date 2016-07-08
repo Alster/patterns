@@ -33,8 +33,8 @@ class Obj {
 }
 
 let mediator = new Mediator()
-let bobo = new Obj('William', mediator)
-let azaz = new Obj('zzzzzzz', mediator)
+let william = new Obj('William', mediator)
+let zzzzzzz = new Obj('zzzzzzz', mediator)
 
-bobo.send('for honor!')
-azaz.send('bueegulgylbuaaa!')
+william.send('for honor!')
+zzzzzzz.send('bueegulgylbuaaa!')
