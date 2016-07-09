@@ -7,26 +7,26 @@ function AOP(target, methodName, onBefore, onAfter) {
     }
 }
 
-class Obj {
+class Man {
     constructor(name) {
         this.name = name
     }
 
     receive(message) {
-        console.log(`i got a message ${message}`)
+        console.log(`i got a message '${message}'`)
     }
 }
 
-let Logger = {
-    logBefore(message){
+let Rat = {
+    spyBefore(message){
         console.log(`${this.name} is ready to receive '${message}'`)
     },
-    logAfter(message){
+    spyAfter(message){
         console.log(`${this.name} successfully received '${message}'`)
     }
 }
 
-let man = new Obj('David')
-AOP(man, 'receive', Logger.logBefore, Logger.logAfter)
+let man = new Man('David')
+AOP(man, 'receive', Rat.spyBefore, Rat.spyAfter)
 
-man.receive('azazaz')
+man.receive('the attack will be tomorrow')
