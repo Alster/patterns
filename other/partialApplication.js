@@ -3,11 +3,13 @@ function say(who, what) {
 }
 
 let JacobSays = say.bind(undefined, 'Jacob')
-JacobSays('azazaazza')
+JacobSays('ololololo')
 let MiriamSays = say.bind(undefined, 'Miriam')
-MiriamSays('lolololo')
+MiriamSays('what?')
+JacobSays('bebebebee')
 
 /*
- 'azazaazza' - Jacob said
- 'lolololo' - Miriam said
+ 'ololololo' - Jacob said
+ 'what?' - Miriam said
+ 'bebebebee' - Jacob said
  */
