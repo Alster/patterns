@@ -1,7 +1,7 @@
 function Memoize(fn, thisArg) {
     let cache = []
     return function () {
-        let key = [].join.call(arguments, ' ')
+        let key = Array.prototype.join.call(arguments, ' ')
         if (!cache.hasOwnProperty(key)) {
             console.log(`need to ${key}?`)
             cache[key] = fn.apply(thisArg, arguments)
