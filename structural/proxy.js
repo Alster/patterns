@@ -23,3 +23,9 @@ let clock = new Clock()
 clock.alarm()
 let dumbClock = new DumbClock()
 dumbClock.alarm()
+
+/*
+ ALARM!!1
+ ..zzzz
+ ALARM!!1
+ */

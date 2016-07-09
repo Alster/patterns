@@ -38,3 +38,8 @@ let zzzzzzz = new Obj('zzzzzzz', mediator)
 
 william.send('for honor!')
 zzzzzzz.send('bueegulgylbuaaa!')
+
+/*
+ zzzzzzz received for honor!
+ William received bueegulgylbuaaa!
+ */

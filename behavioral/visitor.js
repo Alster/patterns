@@ -37,3 +37,10 @@ collector.add(new Element('hell'))
 collector.add(new Element('heaven'))
 collector.accept(new Visitor('motherfucker'))
 collector.accept(new Visitor('goodGuy'))
+
+/*
+ motherfucker visited hell
+ motherfucker visited heaven
+ goodGuy visited hell
+ goodGuy visited heaven
+ */

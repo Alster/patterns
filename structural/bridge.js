@@ -70,3 +70,10 @@ let typicalRuins = new Ruin(rightWorker)
 typicalRuins.buildSomehow()
 let uglyRuins = new Ruin(emigrant)
 uglyRuins.buildSomehow()
+
+/*
+ penthouse built fully perfectly
+ what? well penthouse? haha, do shit
+ ruin built almost perfectly
+ what? bad ruin? haha, do shit
+ */

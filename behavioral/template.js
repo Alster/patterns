@@ -52,3 +52,10 @@ someOne.exec('+')
 let someTwo = new SomeTwo()
 someTwo.exec('-')
 someTwo.exec('+')
+
+/*
+ result is - - +
+ result is + - +
+ result is - + -
+ result is + + -
+ */

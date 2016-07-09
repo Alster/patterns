@@ -28,3 +28,8 @@ man.introduce()
 Mix(man, BadHabits)
 man.wino = `not yet`
 man.tellAboutHabits()
+
+/*
+ hello, my name is Daniel
+ smoking? no. wino? not yet
+ */

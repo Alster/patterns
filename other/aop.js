@@ -30,3 +30,9 @@ let man = new Man('David')
 AOP(man, 'receive', Rat.spyBefore, Rat.spyAfter)
 
 man.receive('the attack will be tomorrow')
+
+/*
+ David is ready to receive 'the attack will be tomorrow'
+ i got a message 'the attack will be tomorrow'
+ David successfully received 'the attack will be tomorrow'
+ */

@@ -25,3 +25,11 @@ honey.doSome()
 honey.doSome()
 honey.doSome()
 honey.doSome()
+
+/*
+ honey is calm
+ honey is angry
+ honey is calm
+ honey is angry
+ honey is calm
+ */

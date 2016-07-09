@@ -31,3 +31,8 @@ let godUser = pipeline.run({pass: 'rightPass'})
 console.log(`result is ${JSON.stringify(godUser)}`)
 let anon = pipeline.run({pass: 'wrongPass'})
 console.log(`result is ${JSON.stringify(anon)}`)
+
+/*
+ result is {"id":"abracadabra","permission":"god"}
+ result is {}
+ */

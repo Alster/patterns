@@ -31,3 +31,7 @@ let store = new Store(honey.createMemento())
 honey.state = 'stupid bitch'
 honey.restoreFromMemento(store.mem)
 console.log(`honey is ${honey.state}`)
+
+/*
+ honey is sweet
+ */

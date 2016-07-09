@@ -21,3 +21,12 @@ let memoized = Memoize(doSomeHard)
 console.log(memoized(`wear`, `socks`))
 console.log(memoized(`wear`, `socks`))
 console.log(memoized(`kill`, `bill`))
+
+/*
+ need to wear socks?
+ wearing is done
+ wear socks? again?
+ wearing is done
+ need to kill bill?
+ killing is done
+ */

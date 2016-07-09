@@ -22,3 +22,9 @@ let handlers = [
         if (handle.handle(req)) console.log(`${handle.name} got a ${req} years`)
     })
 })
+
+/*
+ Liam got a 1 years
+ Emma got a 3 years
+ Mia got a 5 years
+ */

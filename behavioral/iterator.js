@@ -11,3 +11,10 @@ console.log(iter.next())
 console.log(iter.next())
 console.log(iter.next())
 //:3
+
+/*
+ { value: 'it is', done: false }
+ { value: 'javascript es6', done: false }
+ { value: 'feature :3', done: false }
+ { value: undefined, done: true }
+ */

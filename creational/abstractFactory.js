@@ -96,3 +96,8 @@ let hero = new Man(`Great`, heroFactory)
 let peasant = new Man(`dude`, peasantFactory)
 hero.presentYourself()
 peasant.presentYourself()
+
+/*
+ Hello, i'm Great, armed with Sword of the Gods and dressed in the Dragon's Armor
+ Hello, i'm dude, armed with shit stick and dressed in dirty skin
+ */

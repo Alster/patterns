@@ -44,3 +44,7 @@ interpreter.context = {}
 interpreter.addExpression(new SetVar('im', 'a'))
 interpreter.addExpression(new SetVar('new', 'variables'))
 interpreter.run()
+
+/*
+ {"im":"a","new":"variables"}
+ */

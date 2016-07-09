@@ -26,3 +26,11 @@ davidWentToShit('park')
 
 let annieStory = emptyHistory('Annie')
 annieStory('read', 'library')
+
+/*
+ Marco went to kill in the school
+ David went to live in the wood
+ David went to live in the box
+ David went to shit in the park
+ Annie went to read in the library
+*/

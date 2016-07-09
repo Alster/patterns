@@ -44,3 +44,10 @@ dis.send(kill, isabella)
 dis.send(rescue, ethan)
 
 dis.execute()
+
+/*
+ preparing to kill the Isabella
+ Isabella was killed
+ preparing to rescue the Ethan
+ Ethan was rescueed
+ */

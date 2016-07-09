@@ -25,3 +25,10 @@ let adaptedStringReceiver = adaptForStringsReceiver(stringReceiver)
 adaptedStringReceiver(numVal)
 let adaptedNumberReceiver = adaptForNumbersReceiver(numberReceiver)
 adaptedNumberReceiver(stringVal)
+
+/*
+ received number 15.6, want number
+ received string 46.8, want string
+ received string 15.6, want string
+ received number 46.8, want number
+ */

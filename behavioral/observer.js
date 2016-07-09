@@ -28,3 +28,9 @@ new Observer(emitter, 'Olivia')
 new Observer(emitter, 'Alexander')
 
 emitter.state = 'Allah Akbar'
+
+/*
+ Michael just heard "Allah Akbar"
+ Olivia just heard "Allah Akbar"
+ Alexander just heard "Allah Akbar"
+ */

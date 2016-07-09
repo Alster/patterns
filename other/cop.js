@@ -44,3 +44,8 @@ class Ass {
 }
 
 new COP([Head, Ass])
+
+/*
+ what the fuck?!
+ cognitive functions are not configured
+ */

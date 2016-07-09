@@ -12,3 +12,7 @@ class Woman {
 }
 
 new Woman('Charlotte', dependencies)
+
+/*
+ Charlotte was born at good weather!!1
+ */

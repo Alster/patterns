@@ -20,3 +20,8 @@ let careful = new Some(Careful)
 let reckless = new Some(Reckless)
 careful.be()
 reckless.be()
+
+/*
+ im careful
+ im reckless
+ */
