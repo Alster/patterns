@@ -5,16 +5,16 @@ class Template {
 
     exec(val) {
         val += ' '
-        val = this.method1(val)
+        val = this.StepOne(val)
         val += ' '
-        val = this.method2(val)
+        val = this.StepTwo(val)
         console.log(`result is ${val}`)
     }
 
-    method1() {
+    StepOne() {
     }
 
-    method2() {
+    StepTwo() {
     }
 }
 
@@ -23,11 +23,11 @@ class SomeOne extends Template {
         super()
     }
 
-    method1(val) {
+    StepOne(val) {
         return val + '-'
     }
 
-    method2(val) {
+    StepTwo(val) {
         return val + '+'
     }
 }
@@ -37,11 +37,11 @@ class SomeTwo extends Template {
         super()
     }
 
-    method1(val) {
+    StepOne(val) {
         return val + '+'
     }
 
-    method2(val) {
+    StepTwo(val) {
         return val + '-'
     }
 }

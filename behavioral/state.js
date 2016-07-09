@@ -1,7 +1,7 @@
 //http://www.dofactory.com/net/state-design-pattern
 class Honey {
     constructor() {
-        this.mood = Angry
+        this.mood = Calm
     }
 
     doSome() {
@@ -20,6 +20,7 @@ function Angry(honey) {
 }
 
 let honey = new Honey()
+honey.doSome()
 honey.doSome()
 honey.doSome()
 honey.doSome()

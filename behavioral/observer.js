@@ -4,12 +4,10 @@ const EventEmitter = require('events')
 class SomeClass {
     constructor() {
         this.events = new EventEmitter()
-        this._state = null
     }
 
     set state(state) {
-        this._state = state
-        this.events.emit('some', this._state)
+        this.events.emit('some', state)
     }
 }
 
@@ -20,7 +18,7 @@ class Observer {
     }
 
     receive(msg) {
-        console.log(`${this.name} just heard a "${msg}"`)
+        console.log(`${this.name} just heard "${msg}"`)
     }
 }
 

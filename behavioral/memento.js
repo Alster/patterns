@@ -30,4 +30,4 @@ honey.state = 'sweet'
 let store = new Store(honey.createMemento())
 honey.state = 'stupid bitch'
 honey.restoreFromMemento(store.mem)
-console.log(honey.state)
+console.log(`honey is ${honey.state}`)
