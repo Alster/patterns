@@ -1,3 +1,4 @@
+//http://www.dofactory.com/net/composite-design-pattern
 class NodeBase {
     constructor(name) {
         this.name = name
