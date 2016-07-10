@@ -13,26 +13,42 @@ class SomePipeline {
     }
 }
 
+class Human {
+    constructor(name, sex, age) {
+        this.name = name
+        this.sex = sex
+        this.age = age
+    }
+
+    tellAboutYourself() {
+        console.log(`im ${this.name}, very ${this.age} ${this.sex}, have a ${this.specAbility}`)
+    }
+}
+
 let pipeline = new SomePipeline()
 
-function checkAuthorization(user) {
-    if (user.pass === 'rightPass') user.id = 'abracadabra'
-    delete user.pass
-}
-function checkPermissions(user) {
-    if (!user.id) return;
-    if (user.id === 'abracadabra') user.permission = 'god'
+function setSexuality(human) {
+    human.age = human.age < 25 ? 'sexy' : 'skilled'
 }
 
-pipeline.use(checkAuthorization)
-pipeline.use(checkPermissions)
+function setRole(human) {
+    human.sex = human.sex === 'male' ? 'soldier' : 'queen'
+}
 
-let godUser = pipeline.run({pass: 'rightPass'})
-console.log(`result is ${JSON.stringify(godUser)}`)
-let anon = pipeline.run({pass: 'wrongPass'})
-console.log(`result is ${JSON.stringify(anon)}`)
+function setTentacles(human) {
+    human.specAbility = human.age === 'sexy' ? 'tentacles' : 'stinking ass'
+}
+
+pipeline.use(setSexuality)
+pipeline.use(setRole)
+pipeline.use(setTentacles)
+
+pipeline.run(new Human('Henry', 'male', 54)).tellAboutYourself()
+pipeline.run(new Human('Zoe', 'female', 22)).tellAboutYourself()
+pipeline.run(new Human('Riley', 'female', 35)).tellAboutYourself()
 
 /*
- result is {"id":"abracadabra","permission":"god"}
- result is {}
+ im Henry, very skilled soldier, have a stinking ass
+ im Zoe, very sexy queen, have a tentacles
+ im Riley, very skilled queen, have a stinking ass
  */
