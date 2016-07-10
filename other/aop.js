@@ -2,8 +2,9 @@ function AOP(target, methodName, onBefore, onAfter) {
     let originalFunc = target[methodName]
     target[methodName] = function () {
         onBefore && onBefore.apply(target, arguments)
-        originalFunc.apply(target, arguments)
+        let res = originalFunc.apply(target, arguments)
         onAfter && onAfter.apply(target, arguments)
+        return res;
     }
 }
 
